@@ -4,8 +4,21 @@
 
 ## Taller #1: figuras geometricas
 
-- Primer paso: Definir las fórmulas
+- Primer paso: definir las fórmulas
 - Segundo: implentar las formulas en JavaScrip
 - Tercer paso: crear funciones
-- Cuarto paso: integrar Js con HTML
+- Cuarto paso: integrar JS con HTML
  
+## Taller #2: porcentajes y descuentos
+
+- Primer paso: definir las fórmulas
+- Segundo: implentar las formulas en JavaScrip
+- Tercer paso: crear funciones
+- Cuarto paso: integrar JS con HTML
+
+## Taller #3: promedio, mediana y moda
+
+- Primer paso: definir las fórmulas
+- Segundo: implentar las formulas en JavaScrip
+- Tercer paso: crear funciones
+- Cuarto paso: integrar JS con HTML
