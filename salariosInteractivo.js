@@ -38,7 +38,7 @@ function aggInput () {
         input1.insertAdjacentHTML('beforeend', direccion);
     }
     let button = document.getElementById("aggInputs");
-    button.insertAdjacentHTML('beforeend', '<button type="button" onclick="datosUsuario()">Calcular</button>');
+    button.insertAdjacentHTML('beforeend', '<a href="#analisisResultado"><button type="button" onclick="datosUsuario()">Calcular</button></a>');
 }
 
 
