@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promedio</title>
-</head>
-<body>
-    <header>
-        <h1>Promedio</h1>
-    </header>
-    <main>
-        <form>
-            <label for="numeroDatos"># de datos: </label>
-            <input id="numeroDatos" type="number">
-            <button type="button" onclick="aggInput()">enviar</button>
-        </form>
-        <h2>ingrese los Datos</h2>
-        <form id="aggInputs"></form>
-        <p id="resultado"></p>
-    </main>
-    <script src="./promedio.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promedio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="home">
+                <a href="./index.html">Home</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Promedio</h1>
+            <p>Éste es el tercer taller del Curso Práctico de JavaScript, aquí calcularemos el promedio de tu conjunto de datos, para eso ingresa:</p>
+            <form>
+                <label for="numeroDatos"># de datos: </label>
+                <input id="numeroDatos" type="number">
+                <button type="button" onclick="aggInput()">Enviar</button>
+            </form>
+            <form id="aggInputs"></form>
+            <p id="resultado"></p>
+            <footer>
+                <p>Hecho con ❤</p>
+            </footer>
+        </main>
+        <script src="./promedio.js"></script>
+    </body>
 </html>

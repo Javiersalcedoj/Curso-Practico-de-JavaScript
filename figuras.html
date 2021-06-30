@@ -5,13 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Figuras geométrica | Curso Práctico de JavaScript</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Figuras Geometricas</h1>
+            <nav class="home">
+                <a href="./index.html">Home</a>
+            </nav>
         </header>
         <main>
-            <p>Este es el primer taller del curso practico de JavaScript</p>
+            <h1>Figuras Geométricas</h1>
+            <p>Éste es el primer taller del curso practico de JavaScript, aquí calcularemos el área y perímetro de distintas figuras geométricas y otras cosas.</p>
             <section>
                 <h2>Calcula el área y perímetro de un cuadrado</h2>
                 <form>
@@ -25,36 +33,34 @@
                         <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
                         <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
                     </div>
-                </form>
-                <h3>Su perimero es: </h3>
+                </form> 
                 <p id="perimetroCuadro"></p>
-                <h3>Su area es: </h3>
                 <p id="areaCuadro"></p>
             </section>
             <section>
-                <h2>Calcula el área y perímetro de un triangulo</h2>
+                <h2>Calcula el área y perímetro de un triángulo</h2>
                 <form>
                     <div>
                         <label for="inputTrianguloL1">
-                            Escribe cuanto mide el lado #1 de tu triangulo:
+                            Escribe cuanto mide el lado #1 de tu triángulo:
                         </label>
                         <input id="inputTrianguloL1" type="number"> 
                     </div>
                     <div>
                         <label for="inputTrianguloL2">
-                            Escribe cuanto mide el lado #2 de tu triangulo:
+                            Escribe cuanto mide el lado #2 de tu triángulo:
                         </label>
                     <input id="inputTrianguloL2" type="number">
                     </div>
                     <div>
                         <label for="inputTrianguloB">
-                            Escribe cuanto mide la base de tu triangulo:
+                            Escribe cuanto mide la base de tu triángulo:
                         </label>
                         <input id="inputTrianguloB" type="number">
                      </div>
                     <div>
                         <label for="inputTrianguloAltura">
-                            Escribe cuanto mide la altura de tu triangulo:
+                            Escribe cuanto mide la altura de tu triángulo:
                         </label>
                         <input id="inputTrianguloAltura" type="number">
                     </div>
@@ -63,17 +69,15 @@
                         <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
                     </div>
                 </form>
-                <h3>Su perimero es: </h3>
                 <p id="perimetroTriangulo"></p>
-                <h3>Su area es: </h3>
                 <p id="areaTriangulo"></p>
             </section>
             <section>
-                <h2>Calcula el área y perímetro de un circulo</h2>
+                <h2>Calcula el área y perímetro de un círculo</h2>
                 <form>
                     <div>
                         <label for="inputRadio">
-                            Escribe el radio del circulo:
+                            Escribe el radio del círculo:
                         </label>
                         <input id="inputRadio" type="number">
                     </div>
@@ -82,29 +86,27 @@
                         <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
                     </div>
                 </form>
-                <h3>Su perimero es: </h3>
                 <p id="perimetroCirculo"></p>
-                <h3>Su area es: </h3>
                 <p id="areaCirculo"></p>
             </section>
             <section>
-                <h2>Calcular la altura de un Triangulo isoceles</h2>
+                <h2>Calcular la altura de un triángulo isoceles</h2>
                 <form>
                     <div>
                         <label for="inputIsocelesL1">
-                            Escribe cuanto mide el lado #1 de tu triangulo:
+                            Escribe cuanto mide el lado #1 de tu triáangulo:
                         </label>
                         <input id="inputIsocelesL1" type="number"> 
                     </div>
                     <div>
                         <label for="inputIsocelesL2">
-                            Escribe cuanto mide el lado #2 de tu triangulo:
+                            Escribe cuanto mide el lado #2 de tu triángulo:
                         </label>
                     <input id="inputIsocelesL2" type="number">
                     </div>
                     <div>
                         <label for="inputIsocelesB">
-                            Escribe cuanto mide la base de tu triangulo:
+                            Escribe cuanto mide la base de tu triángulo:
                         </label>
                         <input id="inputIsocelesB" type="number">
                      </div>
@@ -112,10 +114,12 @@
                         <button type="button" onclick="calcularAltura()">Calcular altura</button>
                     </div>
                 </form>
-                <h3>La altures es: </h3>
                 <p id="alturaIsoceles"></p>
             </section>
         </main>
+        <footer>
+            <p>Hecho con ❤</p>
+        </footer>
         <script src="./figuras.js"></script>
     </body>
 </html>

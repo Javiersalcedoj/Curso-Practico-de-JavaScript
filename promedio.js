@@ -20,16 +20,17 @@ function calcularMediaAritmetica () {
 
     datosUsuario ();
 
+    //calcular promedio
     const sumaLista = listaUsario.reduce(
         function(valorAcumulado = 0, nuevoElemento){
             return valorAcumulado + nuevoElemento;
         }
     )
-
     //recibe una funcion y lo que permite es sumar o cualquie operacion cada uno de los elementos del array
 
     const promedioLista = sumaLista / listaUsario.length;
 
+    //general respuesta
     const resultado = document.getElementById("resultado");
     resultado.innerText = "El promedio es: " + promedioLista;
 }
@@ -54,9 +55,12 @@ function aggInput () {
     //colocar los imput
     let valorNumeroDatos =  numeroDatos ();
 
+    let ingresa = document.getElementById("aggInputs");
+    ingresa.insertAdjacentHTML('beforeend', '<h2>Ingrese los Datos</h2>');
+
    for(let i = 1; i < (valorNumeroDatos + 1); i++ ) {
         
-        var direccion = '<label for="' + i + '">dato: </label> <input id="' + i + '" type="number"></input>';
+        var direccion = '<div><label for="' + i + '" type="number">Dato: </label> <input id="' + i + '" type="number"></input></div>';
         let input1 = document.getElementById("aggInputs");
         input1.insertAdjacentHTML('beforeend', direccion);
     }

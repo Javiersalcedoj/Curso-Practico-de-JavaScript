@@ -12,14 +12,14 @@ function calcularPerimetroCuadrado() {
     const value = parseInt(input.value);
 
     const perimetro = perimetroCuadrado (value);
-    document.getElementById("perimetroCuadro").innerHTML = perimetro + " cm.";
+    document.getElementById("perimetroCuadro").innerText = "Su perímetro es: " + perimetro + " cm.";
 }
 function calcularAreaCuadrado() {
     const input = document.getElementById("inputCuadrado");
     const value = parseInt(input.value);
 
     const area = areaCuadrado (value);
-    document.getElementById("areaCuadro").innerHTML = area + " cm^2.";
+    document.getElementById("areaCuadro").innerText = "Su área es: " + area + " cm^2.";
 }
 
 //Codigo triangulo
@@ -40,7 +40,7 @@ function calcularPerimetroTriangulo() {
     const base = parseInt(inputB.value);
 
     const perimetro = perimetroTriangulo (lado1, lado2, base);
-    document.getElementById("perimetroTriangulo").innerHTML = perimetro + " cm.";
+    document.getElementById("perimetroTriangulo").innerText = "Su perímetro es: " + perimetro + " cm.";
 }
 
 function calcularAreaTriangulo() {
@@ -50,7 +50,7 @@ function calcularAreaTriangulo() {
     const base = parseInt(inputB.value);
 
     const area = areaTriangulo (base, altura);
-    document.getElementById("areaTriangulo").innerHTML = area + " cm^2.";
+    document.getElementById("areaTriangulo").innerText = "Su área es: " + area + " cm^2.";
 }
 
 //Codigo circulo
@@ -67,42 +67,42 @@ function calcularPerimetroCirculo() {
     const radio = inputRadio.value;
     
     const perimetro =  perimetroCirculo (radio);
-    document.getElementById("perimetroCirculo").innerHTML = perimetro + " cm.";
+    document.getElementById("perimetroCirculo").innerText = "Su perímetro es: " + perimetro + " cm.";
 }
 function calcularAreaCirculo() {
     const inputRadio = document.getElementById("inputRadio");
     const radio = inputRadio.value;
     
     const area =  areaCirculo (radio);
-    document.getElementById("areaCirculo").innerHTML = area + " cm^2.";
+    document.getElementById("areaCirculo").innerText = "Su área es: " + area + " cm^2.";
 }
 
 //Triangulo isoceles
 function alturaTriangulIsoceles (lado1, lado2, base) {
-    debugger
+    
     if (lado1 == lado2) {
-        debugger
+        
         const operacion = (lado1*lado1) - ((base/2)*(base/2));
         // return  Math.sqrt(operacion);
-        debugger
+        
         return Math.sqrt(operacion)
         
     } else {
-        debugger
-        return "NAN";
+        
+        return "(ERROR: No es un triángulo isoceles) NAN";
     }
 }
 function calcularAltura () {
     const input1 = document.getElementById("inputIsocelesL1");
     const lado1 = parseInt(input1.value);
-    debugger
+    
     const input2 = document.getElementById("inputIsocelesL2");
     const lado2 = parseInt(input2.value);
-    debugger
+    
     const inputB = document.getElementById("inputIsocelesB");
     const base = parseInt(inputB.value);
-    debugger
+    
     const altura = alturaTriangulIsoceles (lado1, lado2, base);
-    debugger
-    document.getElementById("alturaIsoceles").innerHTML = altura + " cm.";
+    
+    document.getElementById("alturaIsoceles").innerText = "La altura es: " + altura + " cm.";
 }

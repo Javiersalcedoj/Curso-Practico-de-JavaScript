@@ -1,0 +1,49 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    padding-top: 40px;
+}
+h1, h2, h4, p {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+input {
+    margin: 5px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: 700;
+}
+header .home {
+    display: flex;
+    justify-content: center;
+}
+.soyElBoton {
+    margin-left: calc(50% - 40.5px);
+}
+    
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+@media (min-width: 600px) {
+    body {
+        width: 50%;
+        margin: auto;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        width: 40%;
+    }
+}

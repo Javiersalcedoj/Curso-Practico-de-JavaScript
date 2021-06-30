@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salarios</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="home">
+                <a href="./index.html">Home</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Salarios</h1>
+            <p>Éste es el cuarto taller del Curso Práctico de JavaScript, aquí puedes hacer un análisis estadístico de los salarios de un país.</p>
+            <section>
+                <h2>Análisis Estadístico de Salarios</h2>
+                <p id="salariesColombia"></p>
+
+                <p id="medianaSalariesColombia"></p>
+            </section>
+            <section id="aggLista" >
+                <div><p>¿Quieres agregar tu propia base de dados? Toca el botón?</p>
+                <button id="aggObjetos" onclick="aggObjetos()" class="soyElBoton">Soy el Boton</button></div>
+            </section>
+            <footer>
+                <p>Hecho con ❤</p>
+            </footer>
+        </main>
+        <script src="./salarios.js"></script>
+        <script src="./analisis.js"></script>
+        <script src="./salariosInteractivo.js"></script>
+        
+    </body>
+</html>
